@@ -19,3 +19,6 @@ margin_bottom = 39.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Boost Timer" type="Timer" parent="."]
+one_shot = true
