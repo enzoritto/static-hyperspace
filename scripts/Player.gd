@@ -10,13 +10,13 @@ var direction : Vector2 = Vector2.ZERO
 onready var boost_timer : Timer = get_node("Boost Timer")
 
 func _ready():
-	set_process(true)
+	set_physics_process(true)
 
 func _input(event):
 	if event.is_action_pressed("boost"):
 		boost()
 
-func _process(delta):
+func _physics_process(delta):
 	direction = Vector2.ZERO
 	if is_boosting == true:
 		direction.y -= boost_strength * delta
