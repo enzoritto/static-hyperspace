@@ -9,6 +9,8 @@ extents = Vector2( 10, 360 )
 [node name="Main" type="Node2D"]
 
 [node name="GUI" parent="." instance=ExtResource( 2 )]
+margin_right = 480.0
+margin_bottom = 720.0
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
